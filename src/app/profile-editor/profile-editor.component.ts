@@ -9,12 +9,12 @@ import { FormGroup, FormControl, Validators, FormArray, FormBuilder } from '@ang
 export class ProfileEditorComponent {
   profileForm = new FormGroup({
     firstName: new FormControl('', [Validators.required]),
-    lastName: new FormControl(''),
+    lastName: new FormControl('', [Validators.required]),
     address: new FormGroup({
-      street: new FormControl(''),
-      city: new FormControl(''),
-      state: new FormControl(''),
-      zip: new FormControl('')
+      street: new FormControl('', [Validators.required]),
+      city: new FormControl('', [Validators.required]),
+      state: new FormControl('', [Validators.required]),
+      zip: new FormControl('', [Validators.required])
     })
   });
   constructor(private fb: FormBuilder) {

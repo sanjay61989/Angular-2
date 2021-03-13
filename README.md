@@ -1,5 +1,5 @@
 # Forms
-
+This project is about how to use basic form and it also explain angular lifecycle
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
